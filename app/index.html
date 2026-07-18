@@ -6,34 +6,39 @@
     <title>Kanchan Nanda | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
+    <!-- Navigation -->
     <nav>
-        <ul class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <!-- Header -->
     <header>
         <h1>Kanchan Nanda</h1>
         <p>Aspiring DevOps Engineer</p>
     </header>
 
+    <!-- About -->
     <section id="about">
         <h2>About Me</h2>
         <p>
-            Hello! I'm <strong>Kanchan Nanda</strong>, a final-year B.Tech student
-            passionate about Linux, Git, GitHub, Docker, Jenkins, CI/CD,
-            and Cloud Computing. I enjoy building DevOps projects and
-            continuously learning new technologies.
+            I am a final-year B.Tech student passionate about Linux,
+            Git, Docker, Jenkins, CI/CD and Cloud Computing.
+            I enjoy building DevOps projects and continuously learning
+            new technologies.
         </p>
     </section>
 
-    <section>
+    <!-- Skills -->
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
             <li>Linux</li>
@@ -45,6 +50,7 @@
         </ul>
     </section>
 
+    <!-- Projects -->
     <section id="projects">
         <h2>Projects</h2>
         <ul>
@@ -54,15 +60,23 @@
         </ul>
     </section>
 
+    <!-- Contact -->
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
 
-        <p>
-            <strong>Email:</strong>
-            <a href="mailto:nandakanchan400@gmail.com">
-                nandakanchan400@gmail.com
-            </a>
-        </p>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <textarea rows="5" placeholder="Your Message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+
+        <br>
+
+        <p><strong>Email:</strong> nandakanchan400@gmail.com</p>
 
         <p>
             <strong>GitHub:</strong>
@@ -74,7 +88,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2026 Kanchan Nanda | Portfolio Website</p>
+        <p>© 2026 Kanchan Nanda | DevOps Portfolio</p>
     </footer>
 
     <script src="script.js"></script>
