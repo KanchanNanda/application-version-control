@@ -35,11 +35,6 @@ application-version-control/
 │ ├── style.css
 │ └── script.js
 │
-├── docs/
-│ ├── branching-workflow.md
-│ ├── git-commands.md
-│ └── project-report.md
-│
 ├── screenshots/
 │
 ├── README.md
