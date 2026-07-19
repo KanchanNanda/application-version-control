@@ -71,16 +71,29 @@ header {
     text-shadow: 0 0 8px var(--accent-glow);
 }
 
-/* Sections Global */
+/* Sections Global Layout & Balanced Spacing */
 section {
-    padding: 8rem 2rem 4rem 2rem;
+    padding: 5rem 2rem; 
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+}
+
+/* Premium Neon Faded Divider Line between Sections */
+section:not(:last-of-type)::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    right: 2rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), var(--accent), var(--border), transparent);
+    opacity: 0.4;
 }
 
 .section-title {
     font-size: 2.2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     position: relative;
     display: inline-block;
 }
