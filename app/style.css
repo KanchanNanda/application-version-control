@@ -6,7 +6,6 @@
     --text-muted: #9ca3af;
     --accent: #38bdf8; /* DevOps Blue */
     --accent-glow: rgba(56, 189, 248, 0.15);
-    --terminal-green: #10b981;
     --border: #374151;
     --font-mono: 'Fira Code', 'Courier New', monospace;
 }
@@ -99,16 +98,19 @@ section {
 
 /* Hero Section */
 .hero {
-    min-height: 90vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
+    justify-content: center;
+    text-align: center;
     padding-top: 6rem;
 }
 
 .hero-content {
-    flex: 1;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .badge {
@@ -126,10 +128,10 @@ section {
 }
 
 .hero h1 {
-    font-size: 3.8rem;
+    font-size: 4rem;
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero h1 span {
@@ -140,15 +142,16 @@ section {
 }
 
 .hero p {
-    font-size: 1.25rem;
+    font-size: 1.35rem;
     color: var(--text-muted);
     margin-bottom: 2.5rem;
-    max-width: 580px;
+    max-width: 700px;
 }
 
 .cta-buttons {
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
 }
 
 .btn {
@@ -180,46 +183,6 @@ section {
     background-color: rgba(255,255,255,0.05);
     border-color: var(--text-muted);
 }
-
-/* Hero Terminal Block */
-.hero-visual {
-    flex: 1;
-    max-width: 520px;
-}
-
-.terminal {
-    background-color: #05070f;
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.6);
-    overflow: hidden;
-    font-family: var(--font-mono);
-}
-
-.terminal-header {
-    background-color: #0f111a;
-    padding: 0.75rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.dot { width: 12px; height: 12px; border-radius: 50%; }
-.dot-r { background-color: #ef4444; }
-.dot-y { background-color: #f59e0b; }
-.dot-g { background-color: #10b981; }
-.terminal-title { margin-left: auto; margin-right: auto; font-size: 0.8rem; color: var(--text-muted); }
-
-.terminal-body {
-    padding: 1.5rem;
-    font-size: 0.9rem;
-}
-
-.terminal-row { margin-bottom: 0.75rem; }
-.prompt { color: var(--terminal-green); }
-.cmd { color: var(--text-main); }
-.output { color: var(--text-muted); }
 
 /* About Text */
 .about-text-container {
@@ -481,20 +444,7 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 968px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        padding-top: 8rem;
-    }
-    .hero-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .cta-buttons { justify-content: center; }
-    .hero h1 { font-size: 2.8rem; }
-    .hero-visual { width: 100%; }
+    .hero h1 { font-size: 3rem; }
     .exp-header { flex-direction: column; align-items: flex-start; }
     .exp-date { margin-top: 0.25rem; }
 }
