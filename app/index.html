@@ -3,95 +3,317 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanchan | Portfolio</title>
+    <title>Kanchan | DevOps & Cloud Engineer Portfolio</title>
+    <!-- Linking External CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">Portfolio</div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Header -->
+    <!-- Header / Navbar -->
     <header>
-        <h1>Kanchan</h1>
-        <p>Aspiring DevOps Engineer</p>
+        <nav class="nav-container">
+            <a href="#" class="logo">kanchan@devops:~#</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- About -->
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">Red Hat Certified System Administrator (RHCSA)</span>
+            <h1>Hi, I'm <span>Kanchan</span></h1>
+            <p>Aspiring DevOps Engineer & Linux Administrator. Specialized in automation (Ansible/Terraform), container orchestration, cloud environments, and robust CI/CD workflows.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="terminal">
+                <div class="terminal-header">
+                    <div class="dot dot-r"></div>
+                    <div class="dot dot-y"></div>
+                    <div class="dot dot-g"></div>
+                    <div class="terminal-title">bash</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-row">
+                        <span class="prompt">kanchan@devops:~$</span> <span class="cmd">cat status.txt</span>
+                    </div>
+                    <div class="terminal-row output">
+                        Final-year B.Tech CS Student<br>
+                        Focus: Cloud Infrastructure & Automation<br>
+                        Status: Open to DevOps Roles 🚀
+                    </div>
+                    <div class="terminal-row">
+                        <span class="prompt">kanchan@devops:~$</span> <span class="cmd">git log --oneline -n 1</span>
+                    </div>
+                    <div class="terminal-row output" style="color: var(--accent);">
+                        dc5f8e2 Day 1: Portfolio website built & managed using production Git workflows.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
     <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a final-year B.Tech student passionate about Linux,
-            Git, Docker, Jenkins, CI/CD and Cloud Computing.
-            I enjoy building DevOps projects and continuously learning
-            new technologies.
-        </p>
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text-container">
+            <p>
+                I am a final-year B.Tech Computer Science student specializing in Artificial Intelligence with a deep-rooted passion for Cloud Engineering and Infrastructure Automation. My approach centers on treating infrastructure as code (IaC) to eliminate manual deployment errors and ensure scalable operations.
+            </p>
+            <p>
+                As a Certified Red Hat System Administrator (RHCSA, 90% score), I bring strong capabilities in managing enterprise Linux distributions, setting up secure network environments, containerizing monolithic apps, and managing enterprise automation layers with Git version control tools.
+            </p>
+        </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Linux</li>
-            <li>Git & GitHub</li>
-            <li>Docker</li>
-            <li>Jenkins</li>
-            <li>Java</li>
-            <li>MySQL</li>
-        </ul>
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🛠️ DevOps & Tools</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">GitHub</span>
+                    <span class="skill-tag">Jenkins</span>
+                    <span class="skill-tag">CI/CD Pipelines</span>
+                    <span class="skill-tag">Terraform</span>
+                    <span class="skill-tag">Kubernetes</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>🐧 Operating System & Admin</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">Red Hat Enterprise Linux (RHEL)</span>
+                    <span class="skill-tag">Microsoft Windows</span>
+                    <span class="skill-tag">sudo admin configuration</span>
+                    <span class="skill-tag">crontab scheduling</span>
+                    <span class="skill-tag">jobs management</span>
+                    <span class="skill-tag">User Permission Management</span>
+                    <span class="skill-tag">YUM, DNF, RPM</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>☁️ Cloud Infrastructure (AWS)</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">AWS EC2</span>
+                    <span class="skill-tag">AWS S3</span>
+                    <span class="skill-tag">AWS IAM</span>
+                    <span class="skill-tag">AWS SNS</span>
+                    <span class="skill-tag">AWS Lambda</span>
+                    <span class="skill-tag">CloudFormation</span>
+                    <span class="skill-tag">CloudFront</span>
+                    <span class="skill-tag">Amazon Aurora</span>
+                    <span class="skill-tag">Amazon RDS</span>
+                    <span class="skill-tag">Amazon VPC</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>🌐 Networking & Security</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">TCP/IP</span>
+                    <span class="skill-tag">DNS</span>
+                    <span class="skill-tag">DHCP</span>
+                    <span class="skill-tag">SSH</span>
+                    <span class="skill-tag">SELinux</span>
+                    <span class="skill-tag">iptables firewall</span>
+                    <span class="skill-tag">SSH hardening</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>💻 Other Tech Stack</h3>
+                <div class="tags-container">
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">Express.js</span>
+                    <span class="skill-tag">React.js</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">RESTful API Design</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">DevOps Intern</div>
+                        <div class="exp-company">LinuxWorld Informatics</div>
+                    </div>
+                    <span class="exp-date">June 2026 - July 2026</span>
+                </div>
+                <ul>
+                    <li>Built and containerized applications using Docker; pushed images to Docker Hub and managed multi-container environments via Docker Compose.</li>
+                    <li>Provisioned scalable cloud infrastructure via Terraform and automated production server setups using Ansible playbooks.</li>
+                    <li>Designed, integrated, and managed robust Jenkins CI/CD pipelines alongside Git triggers to automate test/build routines.</li>
+                    <li>Deployed and orchestrating scaled applications smoothly within Kubernetes clusters.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">MERN Stack Developer Intern</div>
+                        <div class="exp-company">NPTEL, IIT Ropar</div>
+                    </div>
+                    <span class="exp-date">Dec 2025 - Jan 2026</span>
+                </div>
+                <ul>
+                    <li>Developed scalable full-stack web applications prioritizing RESTful API standards.</li>
+                    <li>Optimized complex database schemas, successfully decreasing server response times and sharpening client-side application performance.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-role">Linux Administrator Intern</div>
+                        <div class="exp-company">IRCTC</div>
+                    </div>
+                    <span class="exp-date">Jun 2025 - Jul 2025</span>
+                </div>
+                <ul>
+                    <li>Installed, updated, and administered Red Hat Enterprise Linux (RHEL) server fleets across diverse testing environments.</li>
+                    <li>Created and managed container isolated micro-services locally using Podman runtime patterns.</li>
+                    <li>Handled core user permissions adjustments, automated task routines via cron styling, and fixed basic network configurations.</li>
+                    <li>Leveraged deep hands-on expertise to score 90% on the official RHCSA Examination.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>CI/CD Pipeline using Jenkins</li>
-            <li>Dockerized Resume Website</li>
-            <li>Linux Automation Scripts</li>
-        </ul>
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Day 1 Project (FEATURED) -->
+            <div class="project-card featured">
+                <div class="featured-badge">New / Verified</div>
+                <div>
+                    <h3>🚀 Building Portfolio Site via Professional Git/GitHub Workflows</h3>
+                    <p class="project-desc">
+                        Completed an enterprise-standard project by creating a responsive web layout and deploying clean, multi-branch version control models right from the Linux terminal.
+                    </p>
+                    
+                    <div class="project-subheading">🛠️ Solution Structure:</div>
+                    <ul class="project-bullets">
+                        <li>Developed a multi-tier responsive portfolio site structure incorporating semantic HTML5 and clean CSS3 style layouts.</li>
+                    </ul>
+
+                    <div class="project-subheading">💻 Git Workflow Applied:</div>
+                    <ul class="project-bullets">
+                        <li>Initialized decoupled local Git repos mapped cleanly to GitHub anchors.</li>
+                        <li>Configured and isolated features inside dynamic feature branches, eliminating main branch pollution.</li>
+                        <li>Pushed granular commits containing well-structured, production-grade log messages.</li>
+                        <li>Merged audited branches seamlessly back into main pipelines, protecting standard version logs.</li>
+                    </ul>
+                </div>
+                <div class="tags-container" style="margin-top: 1rem;">
+                    <span class="skill-tag text-accent">Linux Terminal</span>
+                    <span class="skill-tag text-accent">Git</span>
+                    <span class="skill-tag text-accent">GitHub</span>
+                    <span class="skill-tag">HTML5/CSS3</span>
+                </div>
+            </div>
+
+            <!-- Mini DevOps Pipeline -->
+            <div class="project-card">
+                <div>
+                    <h3>⚙️ Mini DevOps Automation Pipeline</h3>
+                    <p class="project-desc">
+                        Designed and launched an automated end-to-end framework to build, wrap, and deploy applications, removing fragile manual system configurations.
+                    </p>
+                    <div class="project-subheading">Key Implementation Steps:</div>
+                    <ul class="project-bullets">
+                        <li>Automated multi-step configuration setups via repeatable Ansible Playbooks and Docker.</li>
+                        <li>Decreased deployment actions from 8 down to 2, shortening operational time metrics by approximately 75%.</li>
+                        <li>Configured automated Git triggers to handle instantaneous code deployments immediately upon changes.</li>
+                    </ul>
+                </div>
+                <div class="tags-container" style="margin-top: 1rem;">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Ansible</span>
+                    <span class="skill-tag">Docker Containerization</span>
+                </div>
+            </div>
+
+            <!-- Infrastructure & Configuration Automation -->
+            <div class="project-card">
+                <div>
+                    <h3>☁️ Infrastructure & Configuration Automation As Code</h3>
+                    <p class="project-desc">
+                        Engineered declarative cloud environment blueprints to support environment identical twins, removing manual provisioning configurations completely.
+                    </p>
+                    <div class="project-subheading">Key Implementation Steps:</div>
+                    <ul class="project-bullets">
+                        <li>Designed modular, reusable Infrastructure as Code (IaC) files utilizing Terraform scripting strategies.</li>
+                        <li>Created scalable server configuration templates using enterprise Ansible architecture to ensure predictable deployment behaviors.</li>
+                    </ul>
+                </div>
+                <div class="tags-container" style="margin-top: 1rem;">
+                    <span class="skill-tag">Terraform IaC</span>
+                    <span class="skill-tag">Ansible Engine</span>
+                    <span class="skill-tag">AWS Cloud</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-
-        <form>
-            <input type="text" placeholder="Full Name" required>
-
-            <input type="email" placeholder="Email Address" required>
-
-            <textarea rows="5" placeholder="Your Message"></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-
-        <br>
-
-        <p><strong>Email:</strong> nandakanchan400@gmail.com</p>
-
-        <p>
-            <strong>GitHub:</strong>
-            <a href="https://github.com/KanchanNanda" target="_blank">
-                github.com/KanchanNanda
-            </a>
-        </p>
-
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <p style="color: var(--text-muted); font-size: 1.1rem; margin-bottom: 2rem;">
+                I am actively looking for opportunities in Linux System Administration, Cloud Infrastructure management, or junior DevOps Engineer roles. Let's connect!
+            </p>
+            <div class="contact-grid">
+                <div class="contact-item">
+                    <h4>📍 Location</h4>
+                    <p>Jaipur, Rajasthan, India</p>
+                </div>
+                <div class="contact-item">
+                    <h4>📧 Email Address</h4>
+                    <p><a href="mailto:nandakanchan400@gmail.com">nandakanchan400@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h4>📞 Contact Number</h4>
+                    <p>+91-9351153400</p>
+                </div>
+            </div>
+            <div class="contact-socials">
+                <a href="#" class="btn btn-primary">Connect on LinkedIn</a>
+                <a href="#" class="btn btn-secondary">Follow on GitHub</a>
+            </div>
+        </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Kanchan | DevOps Portfolio</p>
+        <p>&copy; 2026 Kanchan | B.Tech Computer Science (AI). All Rights Reserved.</p>
     </footer>
-
-    <script src="script.js"></script>
 
 </body>
 </html>
